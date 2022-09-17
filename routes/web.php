@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TodoListControl;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,4 @@ Route::get('/', function () {
 });
 
 
-Route::post('/saveItem', function () {
-    return view('welcome');
-})->name("saveItem");
+Route::post('/saveItem',[TodoListControl::class ,"saveItem"] )->name("saveItem");
