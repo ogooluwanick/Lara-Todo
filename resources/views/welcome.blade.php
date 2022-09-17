@@ -16,11 +16,14 @@
                 <main>
                         <h1>ToDo List</h1>
                         
-                        <label for="listItem">New Todo Item </label>
-                        <br>
-                        <input type="text" name="listItem">
-                        <br>
-                        <button>Save Item</button>
+                        <form action="{{route('saveItem')}}"  method="post">
+                                {{csrf_field()}}
+                                <label for="listItem">New Todo Item </label>
+                                <br>
+                                <input type="text" name="listItem">
+                                <br>
+                                <button>Save Item</button>
+                        </form>
 
 
                 </main>
