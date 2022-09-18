@@ -2,7 +2,7 @@
 
 ### Description
 
-Learning laravel by building a very basic Todo app with what I've learnt so far.
+Learning Laravel by building a very basic Todo app with what I've learnt so far.  I found it difficult to deploy this project although it works fine on my PC, looking forward to being able to rectify this issue very soon.
 
 ### Installation
 
