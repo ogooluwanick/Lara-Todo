@@ -118,7 +118,7 @@ button{
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         text-decoration:none !important;
         &:hover,&:focus, &:active {
-                background-color: #d8544f;
+                background-color: hsl(2, 64%, 58%,.7);
                 transform: scale(1.3);
         }
 }
