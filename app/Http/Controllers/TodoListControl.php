@@ -9,7 +9,7 @@ class TodoListControl extends Controller
 {
 
     public function index(){
-        return view('welcome', ["listItems"=>ListItem::all()]);
+        return view('welcome', ["listItems"=>ListItem::where("is_complete",0)->get()]);
 
     }
 
@@ -17,7 +17,9 @@ class TodoListControl extends Controller
         $listItem=ListItem::find($id);
         $listItem->is_complete=1;
         $listItem->save();
-        dd($listItem);
+
+        // dd($listItem);
+
         return redirect('/');
     }
 
