@@ -14,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [TodoListControl::class,"index"]);
 
 Route::post('/saveItem',[TodoListControl::class ,"saveItem"] )->name("saveItem");
+
+Route::post('/markDone/{id}',[TodoListControl::class ,"markDone"] )->name("markDone");
