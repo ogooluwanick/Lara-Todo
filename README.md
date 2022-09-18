@@ -1,8 +1,8 @@
-# Vibes App
+# Lara-Todo
 
 ### Description
 
-The Vibes App uses many modern libraries and frameworks to create a Tinder-style positive quote reading experience for users looking for a mental boost. It uses [Vibes API](https://github.com/davidgrzyb/vibes-api) as the underlying source for positive quotes.
+Learning laravel by building a very basic Todo app with what I've learnt so far.
 
 ### Installation
 
